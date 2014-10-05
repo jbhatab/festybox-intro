@@ -1,20 +1,17 @@
 doctype html
 html
   head
-    title Middleman Backbone React
+    title Bhoulder 
+    link href="http://fonts.googleapis.com/css?family=Roboto:400,500,300,700,900" rel="stylesheet" type="text/css"
+
     meta http-equiv="content-type" content="text/html" charset="utf-8"
     = stylesheet_link_tag 'stylesheets/application.css'
 
   body
 
-    .container
-      = yield
+    = yield
 
 
-    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" 
     = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" 
-    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js" 
-    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/react/0.11.1/react.js" 
-    = javascript_include_tag "http://rawgithub.com/magalhas/backbone-react-component/master/lib/component.js" 
 
     = javascript_include_tag 'javascripts/application.js'
