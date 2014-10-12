@@ -1,1 +1,1 @@
-//= require 'welcome_[age'
+//= require 'welcome_page'
