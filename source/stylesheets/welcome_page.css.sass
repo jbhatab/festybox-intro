@@ -1,71 +1,69 @@
-$grey: rgb(215,215,215)
-
-
-.image-background-wrapper
-  // position: absolute
-  // left: 0
-  // right: 0
-  // padding-top: 40px
-  min-width: 400px
-  img
-    padding: 75px 0 100px 0
-    width: 100%
-    border-bottom: 1px solid $grey
-
-  .image-header
-    padding-top: 30px
-
-  .main-message, .secondary-message
-    text-align: center
-    font-family: 'Roboto'
-
-  .main-message
-    // text-transform: uppercase
-
-  .secondary-message
-    font-weight: 300
-    margin-bottom: 0
-
-
-  #mc-embedded-subscribe-form
-    margin: 20px auto 0
-    width: 400px
-
-    @media (max-width: 600px)
-      width: 300px
-
-    label
-      display: block
-
-    .mc-field-group, .clear
-      display: inline-block
-
-    .mc-field-group
-      width: calc(100% - 72px)
-
-    .email
-      height: 40px
-      box-shadow: none
-      border: 1px solid $grey
-      border-radius: 5px
-      padding: 0 10px
+.welcome-page
+  .image-background-wrapper
+    // position: absolute
+    // left: 0
+    // right: 0
+    // padding-top: 40px
+    min-width: 400px
+    img
+      padding: 75px 0 100px 0
       width: 100%
-      outline: none
+      border-bottom: 1px solid $grey
 
-      &:focus
-        border-color: darken($grey, 10%)
+    .image-header
+      padding-top: 30px
 
-    input.button
-      background: $grey
-      border: none
-      height: 40px
-      line-height: 40px
-      padding: 0 20px
-      border-radius: 5px
-      margin-left: 10px
-      outline: none
+    .main-message, .secondary-message
+      text-align: center
+      font-family: 'Roboto'
 
-      &:hover
-        background: darken($grey, 10%)
+    .main-message
+      // text-transform: uppercase
+
+    .secondary-message
+      font-weight: 300
+      margin-bottom: 0
+
+
+    #mc-embedded-subscribe-form
+      margin: 20px auto 0
+      width: 400px
+
+      @media (max-width: 600px)
+        width: 300px
+
+      label
+        display: block
+
+      .mc-field-group, .clear
+        display: inline-block
+
+      .mc-field-group
+        width: calc(100% - 72px)
+
+      .email
+        height: 40px
+        box-shadow: none
+        border: 1px solid $grey
+        border-radius: 5px
+        padding: 0 10px
+        width: 100%
+        outline: none
+
+        &:focus
+          border-color: darken($grey, 10%)
+
+      input.button
+        background: $grey
+        border: none
+        height: 40px
+        line-height: 40px
+        padding: 0 20px
+        border-radius: 5px
+        margin-left: 10px
+        outline: none
+
+        &:hover
+          background: darken($grey, 10%)
 
 
