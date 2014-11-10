@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.3.4"
 gem "middleman-slim"
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.0'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"

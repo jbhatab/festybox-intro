@@ -1,14 +1,87 @@
 $slide-height: 1000px
+$sidebar-width: 600px
+$box-shadow: rgba(0,0,0,0.25) 0 1px 3px 0px
+$spacing: 20px
+$spacing-sm: 10px
 
 .blog-page
-  
+  background-color: $off-grey
+  position: absolute
+  min-height: 100%
+
+  .container-fluid
+    padding: $spacing $spacing 0
+
   .first-slide
     height: $slide-height
+    height: 100vh
     width: 100%
     background-color: $gold
-    
     color: #fff
+
     h1.main-title
       text-align: center
       line-height: $slide-height
+      line-height: 100vh
       margin: 0
+
+
+  .blog-content, .blog-sidebar
+    margin-bottom: $spacing
+    padding: $spacing
+    box-shadow: $box-shadow
+    background-color: #fff
+
+  .blog-content
+    img
+      width: 100%
+      margin-top: $spacing
+
+      &:first-child
+        margin-top: 0px
+
+  .blog-sidebar
+    .main-header
+      margin-top: 0px
+      margin-bottom: $spacing
+
+    .sub-header
+      font-weight: bold
+      margin-bottom: $spacing-sm
+      margin-top: 0px
+
+    p, ul
+      margin-bottom: $spacing
+
+    .materials-list
+      li
+        margin: 0 (-$spacing)
+        border-top: 1px solid $grey
+
+        &:last-child
+          border-bottom: 1px solid $grey
+
+        a
+          display: block
+          padding: $spacing-sm $spacing
+
+          &:hover
+            background-color: rgb(245,245,245)
+            text-decoration: none
+
+    .sidebar-footer
+      .btn
+        line-height: 35px
+        background-color: $light-grey
+        color: $text-color
+
+        &:hover
+          background-color: darken($light-grey, 5%)
+
+        &:first-child i
+          margin-right: $spacing-sm
+
+        &:last-child i
+          margin-left: $spacing-sm
+
+

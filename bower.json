@@ -1,0 +1,13 @@
+{
+  "name": "bhoulder",
+  "version": "0.0.1",
+  "authors": [
+    "Blaine 'The Hitman' Hatab <jbhatab@gmail.com>",
+    "Zach Payne <uxtronaut@gmail.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "animate.css": "3.1.0",
+    "wow": "https://github.com/matthieua/WOW.git#~1.0.2"
+  }
+}
