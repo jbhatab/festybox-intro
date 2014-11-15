@@ -1,13 +1,14 @@
 $slide-height: 1000px
 $sidebar-width: 600px
+$sidebar-width-md: 500px
 $box-shadow: rgba(0,0,0,0.25) 0 1px 3px 0px
 $spacing: 20px
 $spacing-sm: 10px
 
 .blog-page
   background-color: $off-grey
-  position: absolute
   min-height: 100%
+  height: 100%
 
   .container-fluid
     padding: $spacing $spacing 0
@@ -27,7 +28,6 @@ $spacing-sm: 10px
 
 
   .blog-content, .blog-sidebar
-    margin-bottom: $spacing
     padding: $spacing
     box-shadow: $box-shadow
     background-color: #fff
@@ -53,22 +53,6 @@ $spacing-sm: 10px
     p, ul
       margin-bottom: $spacing
 
-    .materials-list
-      li
-        margin: 0 (-$spacing)
-        border-top: 1px solid $grey
-
-        &:last-child
-          border-bottom: 1px solid $grey
-
-        a
-          display: block
-          padding: $spacing-sm $spacing
-
-          &:hover
-            background-color: rgb(245,245,245)
-            text-decoration: none
-
     .sidebar-footer
       .btn
         line-height: 35px
@@ -83,5 +67,58 @@ $spacing-sm: 10px
 
         &:last-child i
           margin-left: $spacing-sm
+
+
+.blog-page.first-page
+  .blog-content, .blog-sidebar
+    margin-bottom: $spacing
+  .materials-list
+    li
+      margin: 0 (-$spacing)
+      border-top: 1px solid $grey
+
+      &:last-child
+        border-bottom: 1px solid $grey
+
+      a
+        display: block
+        padding: $spacing-sm $spacing
+
+        &:hover
+          background-color: rgb(245,245,245)
+          text-decoration: none
+
+
+.blog-page.step-page
+  padding: $spacing
+  @media (min-width: $screen-md-min)
+    position: fixed
+    overflow: scroll
+    padding-right: $sidebar-width-md + $spacing
+
+  @media (min-width: $screen-lg-min)
+    padding-right: $sidebar-width + $spacing
+
+  .blog-content
+
+  .blog-sidebar
+    position: relative
+    margin-bottom: $spacing
+    @media (min-width: $screen-md-min)
+      overflow: scroll
+      position: fixed
+      bottom: 0
+      top: 0
+      right: 0
+      width: $sidebar-width-md
+      margin-bottom: 0px
+
+    @media (min-width: $screen-lg-min)
+      width: $sidebar-width
+
+    .logo
+      width: 200px
+      margin-bottom: $spacing
+
 
 

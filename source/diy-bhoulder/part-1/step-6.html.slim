@@ -1,0 +1,55 @@
+.blog-page.step-page
+  .blog-sidebar
+
+    h2.main-header Step 6 - Test out the electronics
+    p You will need the following:
+    ul.list-style
+      li Computer
+      li Arduino to computer cable
+      
+
+    h4.sub-header Install Arduino software and additional libraries
+    p
+      | Follow this 
+      a href='http://arduino.cc/en/Guide/HomePage' link
+      |  to install arduino on your computer.
+
+    p
+      | Then download our code and necessary libraries using 
+      a href='/arduino_code.zip' this link
+      | . We used the 
+      a href='http://playground.arduino.cc/Main/SevenSegmentLibrary' seven segment library
+      |  and the
+      a href='http://arduino.cc/en/Guide/HomePage' PID library
+      |  if you are interested in looking more into them.
+
+
+    p To install the libraries into arduino, open up Arduino. Then go to Sketch > Import Library... > Add Library...
+
+    p Then select the zip file called 'SevSeg.zip'. Do the same for the 'PID_v1.zip' zip file.
+
+
+    h4.sub-header Upload part 1 code
+    p Plug the arduino into the computer as shown in picture 1.
+
+    p Open up the 'diy_bhoulder_part_1.ino' file using the Arduino software. Click the upload button in the top left. As long as nothing went wrong, the light will come on and led display will display the temperature of the thermistor. Squeeze the thermistor to see the change. 
+
+    p If the arduino code gives you an error or the electronics aren't working properly, feel free to email us at hello@highsimple.com.
+
+
+    .sidebar-footer
+      .row
+        .col-xs-6
+          a.btn.btn-block href='/diy-bhoulder/part-1/step-5'
+            i.fa.fa-arrow-left
+            | Previous
+        .col-xs-6
+          a.btn.btn-block href='/diy-bhoulder/part-1/step-7'
+            | Next
+            i.fa.fa-arrow-right
+
+
+  .blog-content
+    = image_tag 'diy-bhoulder/part-1/step-6-1.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-6-2.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-6-3.jpg'

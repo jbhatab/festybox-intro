@@ -1,0 +1,42 @@
+.blog-page.step-page
+  .blog-sidebar
+
+    h2.main-header Step 5 - Wire the LED and thermistor
+    p You will need the following:
+    ul.list-style
+      li LED
+      li Thermistor (step 3)
+      li 1 2kOhm resistor
+      li 1 10kOhm resistor
+      li 2 Jumper cables
+      
+
+    h4.sub-header Wire up power and ground
+    p The two side columns with the red pluses and blue minuses connect all of the pins in their repective column. So it's commmon to wire 5v up to the plus sides and ground to the blue side to easily use those from the breadboard.
+
+    p The 'gnd' pin on the arduino will go to the blue minus (black wire) and the '5v' pin  on the arduino will go to the red plus (red wire).cUse photo 2 as reference.
+
+    h4.sub-header Wire up the LED
+
+    p The arduino pin 'A0' connects to a the led with a 2kOhm resistor in series. The long side of the led connects to the resistor and the short side connects to the ground (blue column). Reference picture 3.
+
+    h4.sub-header Wire up the thermistor
+
+    p connect one wire of the thermistor to 5v (red column). Connect the other thermistor wire to ground in series with arduino pin 'A1' and a 10 kOhm resistor.  Reference picture 3.
+
+    .sidebar-footer
+      .row
+        .col-xs-6
+          a.btn.btn-block href='/diy-bhoulder/part-1/step-4'
+            i.fa.fa-arrow-left
+            | Previous
+        .col-xs-6
+          a.btn.btn-block href='/diy-bhoulder/part-1/step-6'
+            | Next
+            i.fa.fa-arrow-right
+
+
+  .blog-content
+    = image_tag 'diy-bhoulder/part-1/step-5-1.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-5-2.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-5-3.jpg'

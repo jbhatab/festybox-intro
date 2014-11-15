@@ -1,29 +1,56 @@
-.container-fluid
-  .row
-    .col-xs-12.col-md-8
-      .blog-content
-        = image_tag 'diy-bhoulder/part-1/step-2-1.jpg'
-    .col-xs-12.col-md-4
-      .blog-sidebar
+.blog-page.step-page
+  .blog-sidebar
 
-        h2.main-header Step 3 - Setup thermistor
-        p You will need the following:
-        ul.list-style
-          li Helping hands
-          li Soldering iron
-          li Solder
-          li A lighter
+    h2.main-header Step 3 - Setup heating pad
+    p You will need the following:
+    ul.list-style
+      li A lighter
+      li Wire stripper
+      li Electrical tape
+      li Heat pad
+      li Screwdriver
+      li Solid state relay
+      li 2 Pieces of solid core wire (about 18")
+      li 1 Piece of shrink tube (about 12")
 
-        h4.sub-header Attach solid core wire to thermistor
-        p Strip both sides of solid core wires. Then use the helping hands to clamp the thermistor and wires for soldering. Solder 1 wire to each end of the thermistor. 
 
-        .sidebar-footer
-          .row
-            .col-xs-6
-              a.btn.btn-block href='/diy-bhoulder/part-1/step-2'
-                i.fa.fa-arrow-left
-                | Previous
-            .col-xs-6
-              a.btn.btn-block href='/diy-bhoulder/part-1/step-4'
-                | Next
-                i.fa.fa-arrow-right
+    h4.sub-header Cut out the heat pad controller
+    p Use the wire stripper to cut the wires on both sides of the heat pad controller. You will be left with the heating pad and the wall plug seperated.
+
+    p Strip the ends of the exposed wires for both the heating apd adn te wall plug.
+
+    h4.sub-header Connect to the solid state relay
+
+    p Wire the exposed heating pad and wall plug wires to the AC side of the solid state relay as shown in picture 2. The wires with writing on them connect to the solid state relay.
+
+    p Connect the pieces of solid core wire to the other side of the solid state relay. 
+
+    h4.sub-header Clean up the wiring
+    p Wrap a piece of tape around the 2 wires not attached to the solid state relay. 
+
+    p Put a piece of tape over the screws on the AC side of the solid state relay.
+
+    h4.sub-header Shrink wrap the solid core wires
+    p Run both of the solid core wires through the shrink tube and leave leave about 6" of wire hanging out. Se the pictures for reference.
+
+    p Use a lighter to heat the shrink tube around the wires. Just evenly put the flame directly to the shrink tube. Don't leave it in one place for long.
+
+
+
+    .sidebar-footer
+      .row
+        .col-xs-6
+          a.btn.btn-block href='/diy-bhoulder/part-1/step-2'
+            i.fa.fa-arrow-left
+            | Previous
+        .col-xs-6
+          a.btn.btn-block href='/diy-bhoulder/part-1/step-4'
+            | Next
+            i.fa.fa-arrow-right
+
+
+  .blog-content
+    = image_tag 'diy-bhoulder/part-1/step-3-1.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-3-2.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-3-3.jpg'
+    = image_tag 'diy-bhoulder/part-1/step-3-4.jpg'

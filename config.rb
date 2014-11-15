@@ -8,8 +8,6 @@ set :bower_components, File.join(root, 'bower_components')
 
 activate :directory_indexes
 
-page "diy-bhoulder/*", :layout => :blog
-
 # Build-specific configuration
 configure :build do
   activate :minify_css
