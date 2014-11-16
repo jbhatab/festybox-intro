@@ -13,8 +13,16 @@ html
     meta http-equiv="content-type" content="text/html" charset="utf-8"
     = stylesheet_link_tag 'stylesheets/application.css'
 
-  body
+  body class=page_classes
 
+    .main-nav
+      = link_to '/' do
+        = image_tag 'high_simple_logo.png'
+      = link_to '/', class: 'text-logo' do
+        | High
+        b Simple
+      ul.list-inline
+        li= link_to 'Blog', '/diy-bhoulder/part-1'
     = yield
 
 

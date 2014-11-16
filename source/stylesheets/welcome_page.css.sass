@@ -8,16 +8,47 @@ $text-color: rgb(51,51,51)
 
 $off-black: #23241f
 
-$gold: rgb(250, 175, 13)
+$gold: #F9A510
 $blue: #4791D2
 $green: #61D56A
 
+body
+  margin-top: 60px
+
+.main-nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  height: 60px
+  line-height: 60px
+  background: $gold
+  z-index: 100
+  box-shadow: rgba(0,0,0,0.25) 0 1px 3px 0px
+  padding: 0 20px
+
+  .text-logo
+    color: #fff
+    font-size: 24px
+    text-decoration: none
+  img
+    margin-right: 20px
+    width: 60px
+    vertical-align: top
+
+  ul
+    float: right
+    li a
+      margin-left: 20px
+      color: #fff
+      font-size: 18px
+      text-decoration: none
+
+      &:first-child
+        margin-left: 0
+
 .welcome-page
   .image-background-wrapper
-    // position: absolute
-    // left: 0
-    // right: 0
-    // padding-top: 40px
     min-width: 400px
     img
       padding: 75px 0 100px 0
@@ -32,7 +63,6 @@ $green: #61D56A
       font-family: 'Open Sans'
 
     .main-message
-      // text-transform: uppercase
 
     .secondary-message
       font-weight: 300
