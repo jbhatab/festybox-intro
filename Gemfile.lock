@@ -71,6 +71,8 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-meta-tags (0.0.1)
+      middleman-core (>= 3.0.0)
     middleman-slim (0.1.2)
       middleman (~> 3.2)
       slim (~> 2.0)
@@ -128,6 +130,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.0)
   middleman (~> 3.3.4)
   middleman-livereload (~> 3.1.0)
+  middleman-meta-tags
   middleman-slim
   tzinfo-data
   wdm (~> 0.1.0)

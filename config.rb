@@ -8,6 +8,8 @@ set :bower_components, File.join(root, 'bower_components')
 
 activate :directory_indexes
 
+activate :meta_tags
+
 # Build-specific configuration
 configure :build do
   activate :minify_css

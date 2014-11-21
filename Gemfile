@@ -6,6 +6,7 @@ gem "middleman", "~>3.3.4"
 gem "middleman-slim"
 gem 'bootstrap-sass', '~> 3.3.0'
 
+gem 'middleman-meta-tags'
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
