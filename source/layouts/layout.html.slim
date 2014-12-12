@@ -1,38 +1,18 @@
 doctype html
 html
   head
-    / title= yield_content(:title)
-    = display_meta_tags site: 'My Awesome Website'
+    = display_meta_tags site: 'Festy Box', description: 'Festy Box is the first ever festival subscription box filled with love and awesomeness', keywords:  %w(edm music festival nation subscription box monthly festy).join(', ')
 
-    - keywords  %w(bho vacuum purge hash essential oil extraction kit bhoulder high simple).join(', ')
     link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel="stylesheet" type="text/css"
 
-    link href="/images/favicon.png" rel=("shortcut icon") type="image/x-icon"
     link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
-
-    meta content="sjNnTpS_KpT8T-aOnGQrC2tSXYEk2TW9vwyt30sWWkA" name="google-site-verification"
-    meta content="srhTuRh9nshW5PqSyAdFZJB7EO2LIeGlGWj5piSvf8o" name="google-site-verification"
 
     meta http-equiv="content-type" content="text/html" charset="utf-8"
     = stylesheet_link_tag 'stylesheets/application.css'
 
-    = yield_content :head
-
-
   body class=page_classes
-
-    .main-nav
-      = link_to '/' do
-        = image_tag 'high_simple_logo.png'
-      = link_to '/', class: 'text-logo' do
-        | High
-        b Simple
-      ul.list-inline
-        li= link_to 'Blog', '/diy-bhoulder/part-1'
     = yield
 
-
-    = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" 
 
     = javascript_include_tag 'javascripts/application.js'
 
@@ -43,7 +23,7 @@ html
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-53632682-1', 'auto');
+      ga('create', 'UA-57603813-1', 'auto');
       ga('send', 'pageview');
 
 

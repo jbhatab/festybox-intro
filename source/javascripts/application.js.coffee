@@ -1,4 +1,5 @@
-#= require bootstrap
-#= require wow/dist/wow
+#= require jquery
+#= require bootstrap-sass
+#= require wow
 
 new WOW().init()
