@@ -4,3 +4,5 @@
 #= require skrollr
 
 new WOW().init()
+
+skrollr.init()
