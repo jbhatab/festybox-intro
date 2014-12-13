@@ -24,6 +24,8 @@ docs/
 # Ignore the build directory
 /build
 build.zip
+festybox.zip
+
 
 # Ignore cache
 /.sass-cache

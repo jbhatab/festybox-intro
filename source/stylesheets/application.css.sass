@@ -46,12 +46,13 @@ $green: #61D56A
 
   .sign-up
     position: absolute
-    top: 350px
+    top: 365px
     left: -200px
     right: -200px
 
-    .sign-up-button
-      // background: #fff
+    input.button
+      background: transparent
+      border: none
       color: #fff
       border-left: 2px solid #fff
       position: absolute
@@ -61,8 +62,9 @@ $green: #61D56A
       line-height: 50px
       width: 100px
       text-align: center
+      outline: none
       text-decoration: none
-    input
+    input.email
       background: transparent
       border: 2px solid #fff
       padding: 10px 15px
@@ -72,6 +74,9 @@ $green: #61D56A
       color: #fff
       &:focus
         outline: none
+
+    // input.button
+
 
     ::-webkit-input-placeholder
       color: #fff
