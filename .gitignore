@@ -23,6 +23,7 @@ docs/
 
 # Ignore the build directory
 /build
+build.zip
 
 # Ignore cache
 /.sass-cache

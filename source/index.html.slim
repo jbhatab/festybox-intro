@@ -1,7 +1,31 @@
 .main-container
-  .stars data-0='top: 0%;opacity:1;' data-1600='top: 40%;opacity:1;' data-2000='top: 50%;opacity:0;'
-    / i.fa.fa-star
+  .item data-0='top: 0%;opacity:1;' data-1600='top: 40%;opacity:1;' data-2000='top: 50%;opacity:0;'
     i.fa.fa-heart-o
-    / i.fa.fa-star
+
+  .item data-2000='top: 0%;opacity:1;' data-3600='top: 40%;opacity:1;' data-4000='top: 50%;opacity:0;'
+    = image_tag 'cat.png'
+
+  .item data-2000='top: 0%;opacity:1;' data-3600='top: 40%;opacity:1;' data-4000='top: 50%;opacity:0;'
+    = image_tag 'cat.png'
+
+  .item data-4000='top: 0%;opacity:1;' data-5600='top: 40%;opacity:1;' data-6000='top: 50%;opacity:0;'
+    = image_tag 'bassnectar.png'
   .festy-box-container
+    
     = image_tag 'box_with_logo.png', class: 'festy-box'
+    .festy-box-message
+      h1.title data-0='opacity:1;' data-400='opacity:0;'
+        | What's in the Festy Box?
+      h1.title data-400='opacity:0;' data-900='opacity:1;' data-1600='opacity:1;' data-2400='opacity:0;' Love
+
+      h1.title data-2200='opacity:0;' data-2600='opacity:1;' data-3600='opacity:1;' data-4000='opacity:0;' Cats?!?! Fuck it.
+
+      h1.title data-3800='opacity:0;' data-4200='opacity:1;' data-6600='opacity:1;' data-7000='opacity:0;' Was that Bassnectar? Dope.
+
+      h1.title data-6800='opacity:0;' data-7200='opacity:1;' data-9000='opacity:1;'
+       | Let me know when it's ready!
+
+    .sign-up
+      input placeholder="Enter email..."
+      a.sign-up-button href='#' Sign Up
+
