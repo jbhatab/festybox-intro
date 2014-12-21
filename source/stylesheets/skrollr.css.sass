@@ -1,0 +1,105 @@
+//=require "animate.css/animate"
+
+$off-grey: #EDF0F5
+$light-grey: #eee
+$grey: rgb(215,215,215)
+$text-color: rgb(51,51,51)
+
+$off-black: #23241f
+
+$gold: #F9A510
+$blue: #4791D2
+$green: #61D56A
+
+.main-container
+  position: fixed
+  width: 100%
+  height: 100%
+  background-image: linear-gradient(135deg, #c3299c, #c3292c)
+
+.festy-box-container
+  position: absolute
+  z-index: -1
+  width: 256px
+  height: 256px
+  top: 50%
+  left: 50%
+  margin-top: -128px
+  margin-left: -128px
+
+  .festy-box-message
+    position: absolute
+    top: 256px
+    width: 600px
+    left: -172px
+
+
+
+    h1.title
+      position: absolute
+      color: #fff
+      text-align: center
+      width: 100%
+
+  .sign-up
+    position: absolute
+    top: 365px
+    left: -200px
+    right: -200px
+
+    input.button
+      background: transparent
+      border: none
+      color: #fff
+      border-left: 2px solid #fff
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      line-height: 50px
+      width: 100px
+      text-align: center
+      outline: none
+      text-decoration: none
+    input.email
+      background: transparent
+      border: 2px solid #fff
+      padding: 10px 15px
+      border-radius: 5px
+      width: 100%
+      height: 50px
+      color: #fff
+      &:focus
+        outline: none
+
+    // input.button
+
+
+    ::-webkit-input-placeholder
+      color: #fff
+
+    :-moz-placeholder
+      color: #fff
+
+    ::-moz-placeholder
+      color: #fff
+
+    :-ms-input-placeholder
+      color: #fff
+
+.item
+  position: absolute
+  left: 50%
+  margin-left: -128px
+  margin-top: -125px
+  width: 256px
+  text-align: center
+
+  .fa
+    color: #fff
+    font-size: 50px
+
+
+  img
+    width: 100%
+    padding: 0 70px
