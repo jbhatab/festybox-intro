@@ -1,30 +1,79 @@
-ul#menu
 #content-wrapper
-  #example-wrapper.scrollContainer
+  #scroll-wrapper.scrollContainer
     .scrollContent
-      section#titlechart
-        #description
-          h1 Mobile Support (Basic)
-          h2 Try this page on your mobile device!
-          input placeholder='email'
-          p
-            i
-              b Note:
-              | This does not concern iOS  8+, as it finally supports real scroll events.
-          p
-            | ScrollMagic works just as well on mobile devices.
-            br/
-            | One big drawback is that mobile devices dispatch the scroll event AFTER the scroll is complete and not DURING.
-            br/
-            | To get support for on-the-fly updates the easiest way is to wrap all your content into a big container with the size of the viewport and scroll within it instead (like shown in this example).
-            br/
-            | Unfortunately this also results in loosing the scroll momentum. To see how you can preserve it check "
-            a href="../expert/mobile_advanced.html" > Mobile Support (advanced)
-            | ".
-      section.demo
-        .spacer.s1
-        #trigger.spacer.s1
-        .spacer.s0
-        .mario.box2
-        .goomba.box3
-        .spacer.s7
+      #bottom-half
+        h1#scroll-message.festy-message
+          | Scroll down
+          i.fa.fa-arrow-circle-o-down
+        #festy-box-wrapper
+          .box-container
+            .festy-box
+              | Festy Box
+              .festy-box-line#left-line
+                .left-festy-box-line
+              .festy-box-line#right-line
+                .right-festy-box-line
+            h1#starting-message.festy-message Festival goodies delivered monthly!
+            h1#first-message.festy-message So what's in the Festy Box?
+            h1#second-message.festy-message Heady hat pins
+            h1#third-message.festy-message Love
+            h1#fourth-message.festy-message Sunglasses
+            h1#fifth-message.festy-message Dope local art
+            h1#sixth-message.festy-message And rainbows obviously...
+            h1#seventh-message.festy-message Let me know when it's ready!
+
+        .box-container
+          #sign-up
+            #mc_embed_signup
+              form#mc-embedded-subscribe-form.validate action="//festybox.us9.list-manage.com/subscribe/post?u=44176cf9ffc4e7cda22d38895&amp;id=2afd0004b9" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" 
+                #mc_embed_signup_scroll
+                  .mc-field-group
+                    / label for="mce-EMAIL"  Email Address
+                    input#mce-EMAIL.required.email name="EMAIL" type="email" value="" placeholder="Enter email..."
+                  #mce-responses.clear
+                    #mce-error-response.response style="display:none" 
+                    #mce-success-response.response style="display:none" 
+                  /! real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  div style=("position: absolute; left: -5000px;") 
+                    input name="b_44176cf9ffc4e7cda22d38895_2afd0004b9" tabindex="-1" type="text" value=""
+                  .clear
+                    input#mc-embedded-subscribe.button name="subscribe" type="submit" value="Sign Up"
+
+      #slide-1.slide
+        .slide-content
+
+      #slide-2.slide
+        .slide-content
+          = image_tag 'pin-1.png'
+          = image_tag 'pin-2.png'
+
+      #slide-3.slide
+        .slide-content
+          i.fa.fa-heart-o#love-pin
+
+      #slide-4.slide
+        .slide-content
+          = image_tag 'sunglasses.png'
+
+      #slide-5.slide
+        .slide-content
+          = image_tag 'art-1.png', class: 'photo-frame'
+          = image_tag 'art-2.png', class: 'photo-frame'
+
+
+      #slide-6.slide
+        .slide-content
+          #rainbow
+            .band.red
+            .band.orange
+            .band.yellow
+            .band.green
+            .band.blue
+            .band.purple
+
+      #slide-7.slide
+        .slide-content
+          h1
+            | Made with love by
+            = link_to 'http://www.musicfestivalnation.com', target: '_blank' do
+              = image_tag 'mfn_logo_thumb.png', class: 'mfn-logo'

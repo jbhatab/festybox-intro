@@ -1,27 +1,276 @@
-//=require "font-awesome/css/font-awesome.min"
+//=require "animate.css/animate"
 //=require "ScrollMagic/css/normalize.css"
 
-#content-wrapper, #example-wrapper
+$green: #41BE45
+// #58C350
+// #3DB341
+// #389D34
+
+html *
+  box-sizing: border-box
+
+html, body
+  height: 100%
+  font-family: 'Open Sans'
+
+body
+  background-color: $green
+
+#content-wrapper, #scroll-wrapper
   height: 100%
 
 .scrollContainer
   overflow-y: scroll
   overflow-x: hidden
   width: 100%
+
+#scroll-wrapper .scrollContent
   height: 100%
-  margin: auto
+  position: relative
+  font-size: 0
 
-#example-wrapper .scrollContent
-  height: 100%
+  > div
+    font-size: 14px
 
-.horizontal.scrollContainer
-  overflow-y: hidden
-  overflow-x: scroll
 
-#example-wrapper.scrollContainer
+#scroll-wrapper.scrollContainer
   .scrollContent
     width: 100%
     height: auto
-  &.horizontal .scrollContent
-    width: auto
+
+
+#bottom-half
+  position: relative
+  height: 50vh
+  margin-top: 50vh
+  width: 100%
+
+  #festy-box-wrapper
+    pointer-events: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
     height: 100%
+    z-index: 100
+    background-color: $green
+
+    @media (min-width: 600px)
+      left: 25px
+      width: calc(100% - 50px)
+
+  .festy-box
+    display: block
+    width: 250px
+    height: 75px
+    color: #fff
+    border: 3px solid #fff
+    margin: 0 auto
+    text-align: center
+    line-height: 69px
+    font-weight: 600
+    font-size: 24px
+    position: relative
+
+    .festy-box-line
+      position: absolute
+      top: -128px
+      width: 250px
+      height: 250px
+      
+
+      &#left-line
+        transform: rotate(-130deg)
+        left: -128px
+
+      &#right-line
+        right: -128px
+        transform: rotate(130deg)
+
+    .left-festy-box-line, .right-festy-box-line
+      position: absolute
+      top: 50%
+      margin-top: -1.5px
+      border-top: 3px solid #fff
+      
+
+    .left-festy-box-line
+      left: 122px
+      right: 3px
+    .right-festy-box-line
+      right: 122px
+      left: 3px
+
+  .festy-message
+    color: #fff
+    text-align: center
+    opacity: 0
+    font-size: 28px
+    position: absolute
+    left: 0
+    // right: 0
+    width: 100%
+
+    &#starting-message
+      opacity: 1
+
+    &#scroll-message
+      @media (min-width: 600px)
+        top: -250px
+      top: -200px
+      opacity: 1
+      i
+        display: block
+
+  #sign-up
+    width: 100%
+    max-width: 540px
+    margin: 0 auto
+    top: 152px
+    z-index: 1000
+    padding: 0 20px
+
+    input.button
+      background: transparent
+      border: none
+      color: #fff
+      border-left: 2px solid #fff
+      position: absolute
+      top: 0
+      right: 20px
+      bottom: 0
+      line-height: 46px
+      width: 100px
+      text-align: center
+      outline: none
+      text-decoration: none
+      padding: 0
+
+    input.email
+      background: transparent
+      border: 2px solid #fff
+      padding: 10px 15px
+      border-radius: 5px
+      width: 100%
+      height: 50px
+      color: #fff
+      &:focus
+        outline: none
+
+    ::-webkit-input-placeholder
+      color: #fff
+
+    :-moz-placeholder
+      color: #fff
+
+    ::-moz-placeholder
+      color: #fff
+
+    :-ms-input-placeholder
+      color: #fff
+
+
+.box-container
+  width: 100%
+  max-width: 540px
+  margin: 0 auto
+
+.slide
+  position: relative
+  height: 200vh
+  width: 100%
+  pointer-events: none
+
+  img
+    max-width: 200px
+    display: block
+    margin: 0 auto
+
+  .photo-frame
+    padding: 5px
+    background: #fff
+    box-shadow: rgba(0,0,0,0.25) 0 1px 3px 0px
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+
+  .slide-content
+    position: absolute
+    width: 500px
+    left: 50%
+    margin-left: -250px
+    bottom: 200vh
+    text-align: center
+    display: none
+    pointer-events: none
+    &.active
+      display: block
+
+    i.fa, h1
+      font-size: 40px
+      color: #fff
+
+    i.fa
+      font-size: 80px
+
+#slide-1.slide
+  height: 150vh
+
+
+#slide-6.slide
+  height: 400vh
+  .slide-content
+    bottom: 400vh
+
+#slide-7.slide
+  pointer-events: auto
+  .slide-content
+    pointer-events: auto
+
+  h1
+    font-size: 30px
+    font-weight: normal
+
+  .mfn-logo
+    display: inline-block
+    vertical-align: middle
+    margin-left: 10px
+    width: 60px
+
+#rainbow
+  position: absolute
+  width: 180px
+  left: 50%
+  margin-left: -90px
+  height: 100vh
+  bottom: 0
+  .band
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    width: 30px
+
+    &.red
+      background: #ff0000
+
+    &.orange
+      left: 30px
+      background: #d39415
+
+    &.yellow
+      background: #cbce21
+      left: 60px
+
+    &.green
+      background: #0da80d
+      left: 90px
+
+    &.blue
+      background: #1934d1
+      left: 120px
+
+    &.purple
+      background: #6d24e2
+      left: 150px
+
