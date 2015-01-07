@@ -9,18 +9,18 @@
           .box-container
             .festy-box
               | Festy Box
+              / #festy-gif
+              /   = image_tag 'stage-art-drop-in.gif'
               .festy-box-line#left-line
                 .left-festy-box-line
               .festy-box-line#right-line
                 .right-festy-box-line
-            h1#starting-message.festy-message Festival goodies delivered monthly!
-            h1#first-message.festy-message So what's in the Festy Box?
-            h1#second-message.festy-message Heady hat pins
-            h1#third-message.festy-message Love
-            h1#fourth-message.festy-message Sunglasses
-            h1#fifth-message.festy-message Dope local art
-            h1#sixth-message.festy-message And rainbows obviously...
-            h1#seventh-message.festy-message Let me know when it's ready!
+            h1#starting-message.festy-message High Quality Festival Goodness Delivered Monthly
+            h1#first-message.festy-message Stylish Apparel
+            h1#second-message.festy-message Awesome Accessories
+            h1#third-message.festy-message Amazing Featured Artists
+            h1#fourth-message.festy-message And rainbows obviously...
+            h1#fifth-message.festy-message Let me know when it's ready!
 
         .box-container
           #sign-up
@@ -39,29 +39,26 @@
                   .clear
                     input#mc-embedded-subscribe.button name="subscribe" type="submit" value="Sign Up"
 
+
       #slide-1.slide
         .slide-content
+          = image_tag 'Apparel.png'
+          / = image_tag 'pin-1.png'
+          / = image_tag 'pin-2.png'
 
       #slide-2.slide
         .slide-content
-          = image_tag 'pin-1.png'
-          = image_tag 'pin-2.png'
+          = image_tag 'accessories.png'
+          / = image_tag 'sunglasses.png'
 
       #slide-3.slide
         .slide-content
-          i.fa.fa-heart-o#love-pin
+          = image_tag 'Art.png'
+          / = image_tag 'art-1.png', class: 'photo-frame'
+          / = image_tag 'art-2.png', class: 'photo-frame'
+
 
       #slide-4.slide
-        .slide-content
-          = image_tag 'sunglasses.png'
-
-      #slide-5.slide
-        .slide-content
-          = image_tag 'art-1.png', class: 'photo-frame'
-          = image_tag 'art-2.png', class: 'photo-frame'
-
-
-      #slide-6.slide
         .slide-content
           #rainbow
             .band.red
@@ -71,7 +68,7 @@
             .band.blue
             .band.purple
 
-      #slide-7.slide
+      #slide-5.slide
         .slide-content
           h1
             | Made with love by

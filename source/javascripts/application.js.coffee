@@ -27,93 +27,79 @@ scrollTween = new TimelineMax()
     TweenMax.to("#scroll-message", 1.5, {'margin-top': "25vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#starting-message", 1, {'opacity': '0', ease: Power0.easeNone})
+    # TweenMax.to("#starting-message", 1, {'opacity': '0', ease: Power0.easeNone})
     TweenMax.to("#scroll-message", 1, {'margin-top': "50vh", ease: Linear.easeNone})
     TweenMax.to("#scroll-message", 1, {'opacity': "0", ease: Linear.easeNone})
   ])
+  # .add([
+  #   TweenMax.to("#first-message", 1, {'opacity': '1', ease: Power0.easeNone})
+  # ])
+
+
+apparelTween = new TimelineMax()
   .add([
-    TweenMax.to("#first-message", 1, {'opacity': '1', ease: Power0.easeNone})
+    TweenMax.to("#starting-message", .25, {'opacity': '0', ease: Power0.easeNone})
+    TweenMax.to("#first-message", .25, {'opacity': '1', ease: Power0.easeNone})
+    TweenMax.to("#slide-1 > .slide-content", 2, {'bottom': "150vh", ease: Linear.easeNone})
+  ])
+  .add([
+    TweenMax.to("#slide-1 > .slide-content", 1, {'bottom': "100vh", ease: Linear.easeNone})
   ])
 
-
-heyTween = TweenMax.to("#slide-1 > .slide-content", 1, {'bottom': "100vh", ease: Linear.easeNone})
-
-pinTween = new TimelineMax()
+accesoriesTween = new TimelineMax()
   .add([
     TweenMax.to("#first-message", .25, {'opacity': '0', ease: Power0.easeNone})
     TweenMax.to("#second-message", .25, {'opacity': '1', ease: Power0.easeNone})
-    TweenMax.to("#slide-2 > .slide-content", 1, {'bottom': "150vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-2 > .slide-content", 2, {'bottom': "150vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-2 > .slide-content", 1, {'bottom': "50vh", ease: Linear.easeNone})
-  ])
-
-loveTween = new TimelineMax()
-  .add([
-    TweenMax.to("#second-message", .25, {'opacity': '0', ease: Power0.easeNone})
-    TweenMax.to("#third-message", .25, {'opacity': '1', ease: Power0.easeNone})
-    TweenMax.to("#slide-3 > .slide-content", 1, {'bottom': "150vh", ease: Linear.easeNone})
-  ])
-  .add([
-    TweenMax.to("#slide-3 > .slide-content", 1, {'bottom': "50vh", ease: Linear.easeNone})
-  ])
-
-sunglassesTween = new TimelineMax()
-  .add([
-    TweenMax.to("#third-message", .25, {'opacity': '0', ease: Power0.easeNone})
-    TweenMax.to("#fourth-message", .25, {'opacity': '1', ease: Power0.easeNone})
-    TweenMax.to("#slide-4 > .slide-content", 1, {'bottom': "150vh", ease: Linear.easeNone})
-  ])
-  .add([
-    TweenMax.to("#slide-4 > .slide-content", 1, {'bottom': "50vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-2 > .slide-content", 1, {'bottom': "100vh", ease: Linear.easeNone})
   ])
 
 artTween = new TimelineMax()
   .add([
-    TweenMax.to("#fourth-message", .25, {'opacity': '0', ease: Power0.easeNone})
-    TweenMax.to("#fifth-message", .25, {'opacity': '1', ease: Power0.easeNone})
-    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "150vh", ease: Linear.easeNone})
+    TweenMax.to("#second-message", .25, {'opacity': '0', ease: Power0.easeNone})
+    TweenMax.to("#third-message", .25, {'opacity': '1', ease: Power0.easeNone})
+    TweenMax.to("#slide-3 > .slide-content", 2, {'bottom': "150vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "50vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-3 > .slide-content", 1, {'bottom': "100vh", ease: Linear.easeNone})
   ])
 
 
 rainbowTween = new TimelineMax()
   .add([
-    TweenMax.to("#fifth-message", .25, {'opacity': '0', ease: Power0.easeNone})
-    TweenMax.to("#sixth-message", .25, {'opacity': '1', ease: Power0.easeNone})
-    TweenMax.to("#slide-6 > .slide-content", 1, {'bottom': "300vh", ease: Linear.easeNone})
+    TweenMax.to("#third-message", .25, {'opacity': '0', ease: Power0.easeNone})
+    TweenMax.to("#fourth-message", .25, {'opacity': '1', ease: Power0.easeNone})
+    TweenMax.to("#slide-4 > .slide-content", 1, {'bottom': "300vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-6 > .slide-content", 2, {'bottom': "300vh", ease: Linear.easeNone})
-    TweenMax.to("#sixth-sub-message", .5, {'opacity': "1", ease: Power0.easeNone})
+    TweenMax.to("#slide-4 > .slide-content", 2, {'bottom': "300vh", ease: Linear.easeNone})
+    TweenMax.to("#fourth-sub-message", .5, {'opacity': "1", ease: Power0.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-6 > .slide-content", 1, {'bottom': "200vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-4 > .slide-content", 1, {'bottom': "200vh", ease: Linear.easeNone})
     TweenMax.to("#left-line", 1, {'transform': "rotate(-65deg)", 'left': '-125px', ease: Linear.easeNone})
     TweenMax.to("#right-line", 1, {'transform': "rotate(65deg)", 'right': '-125px', ease: Linear.easeNone})
-    # TweenMax.to("#sixth-message", .25, {'opacity': '0', ease: Power0.easeNone})
-    # TweenMax.to("#seventh-message", .25, {'opacity': '1', ease: Power0.easeNone})
   ])
   .add([
     TweenMax.to("#left-line", 1, {'transform': "rotate(0deg)", 'left': '-125px', ease: Linear.easeNone})
     TweenMax.to("#right-line", 1, {'transform': "rotate(0deg)", 'right': '-125px', ease: Linear.easeNone})
-    TweenMax.to("#sixth-message", .25, {'opacity': '0', ease: Power0.easeNone})
-    TweenMax.to("#seventh-message", .25, {'opacity': '1', ease: Power0.easeNone})
+    TweenMax.to("#fourth-message", .25, {'opacity': '0', ease: Power0.easeNone})
+    TweenMax.to("#fifth-message", .25, {'opacity': '1', ease: Power0.easeNone})
   ])
 
 finalTween = new TimelineMax()
   .add([
     
-    TweenMax.to("#slide-7 > .slide-content", .5, {'bottom': "200vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "200vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-7 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
   ])
 
   .add([
-    TweenMax.to("#slide-7 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
   ])
 
 scrollScene = new ScrollScene({triggerElement: "#bottom-half", duration: 2*duration, offset: -400})
@@ -121,52 +107,38 @@ scrollScene = new ScrollScene({triggerElement: "#bottom-half", duration: 2*durat
   .addTo(controller)
   .addIndicators()
 
-heyScene = new ScrollScene({triggerElement: "#slide-1", duration: 2*duration})
+apparelScene = new ScrollScene({triggerElement: "#slide-1", duration: 2*duration})
   .setPin("#slide-1", {pushFollowers: false})
   .setClassToggle("#slide-1 > .slide-content", "active")
-  .setTween(heyTween)
+  .setTween(apparelTween)
   .addTo(controller)
   .addIndicators()
 
-pinScene = new ScrollScene({triggerElement: "#slide-2", duration: 2*duration})
+accesoriesScene = new ScrollScene({triggerElement: "#slide-2", duration: 2*duration})
   .setPin("#slide-2", {pushFollowers: false})
   .setClassToggle("#slide-2 > .slide-content", "active")
-  .setTween(pinTween)
+  .setTween(accesoriesTween)
   .addTo(controller)
   .addIndicators()
 
-loveScene = new ScrollScene({triggerElement: "#slide-3", duration: 2*duration})
+artScene = new ScrollScene({triggerElement: "#slide-3", duration: 2*duration})
   .setPin("#slide-3", {pushFollowers: false})
   .setClassToggle("#slide-3 > .slide-content", "active")
-  .setTween(loveTween)
-  .addTo(controller)
-  .addIndicators()
-
-sunglassesScene = new ScrollScene({triggerElement: "#slide-4", duration: 2*duration})
-  .setPin("#slide-4", {pushFollowers: false})
-  .setClassToggle("#slide-4 > .slide-content", "active")
-  .setTween(sunglassesTween)
-  .addTo(controller)
-  .addIndicators()
-
-artScene = new ScrollScene({triggerElement: "#slide-5", duration: 2*duration})
-  .setPin("#slide-5", {pushFollowers: false})
-  .setClassToggle("#slide-5 > .slide-content", "active")
   .setTween(artTween)
   .addTo(controller)
   .addIndicators()
 
-rainbowScene = new ScrollScene({triggerElement: "#slide-6", duration: 4*duration})
-  .setPin("#slide-6", {pushFollowers: false})
-  .setClassToggle("#slide-6 > .slide-content", "active")
+rainbowScene = new ScrollScene({triggerElement: "#slide-4", duration: 4*duration})
+  .setPin("#slide-4", {pushFollowers: false})
+  .setClassToggle("#slide-4 > .slide-content", "active")
   .setTween(rainbowTween)
   .addTo(controller)
   .addIndicators()
 
 
-finalScene = new ScrollScene({triggerElement: "#slide-7", duration: 6*duration})
-  .setPin("#slide-7", {pushFollowers: false})
-  .setClassToggle("#slide-7 > .slide-content", "active")
+finalScene = new ScrollScene({triggerElement: "#slide-5", duration: 6*duration})
+  .setPin("#slide-5", {pushFollowers: false})
+  .setClassToggle("#slide-5 > .slide-content", "active")
   .setTween(finalTween)
   .addTo(controller)
   .addIndicators()
