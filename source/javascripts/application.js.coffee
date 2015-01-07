@@ -97,9 +97,17 @@ finalTween = new TimelineMax()
   .add([
     TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
   ])
-
   .add([
-    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
+    TweenMax.to("#mc_embed_signup_scroll", .2, {'transform': "scale(1.1)", ease: Linear.easeNone})
+  ])
+  .add([
+    TweenMax.to("#mc_embed_signup_scroll", .2, {'transform': "scale(1)", ease: Linear.easeNone})
+  ])
+  .add([
+    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "160vh", ease: Linear.easeNone})
+  ])
+  .add([
+    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "160vh", ease: Linear.easeNone})
   ])
 
 scrollScene = new ScrollScene({triggerElement: "#bottom-half", duration: 2*duration, offset: -400})
