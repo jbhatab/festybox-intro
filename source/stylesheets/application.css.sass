@@ -32,6 +32,11 @@ body
   > div
     font-size: 14px
 
+@media (max-width: 700px)
+
+  .hide-on-small
+    display: none
+
 
 #scroll-wrapper.scrollContainer
   .scrollContent
@@ -120,6 +125,9 @@ body
     // right: 0
     width: 100%
 
+    @media (max-width: 700px)
+      font-size: 24px
+
     &#starting-message
       opacity: 1
 
@@ -139,6 +147,9 @@ body
     top: 152px
     z-index: 1000
     padding: 0 20px
+
+    @media (max-width: 700px)
+      top: 142px
 
     input.button
       background: transparent
