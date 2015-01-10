@@ -38,6 +38,11 @@ body
     width: 100%
     height: auto
 
+#mc_embed_signup_scroll
+  -ms-transform: scale(1)
+  -webkit-transform: scale(1)
+  transform: scale(1)
+
 
 #bottom-half
   position: relative
@@ -80,11 +85,15 @@ body
       
 
       &#left-line
+        -ms-transform: rotate(-130deg)
+        -webkit-transform: rotate(-130deg)
         transform: rotate(-130deg)
         left: -128px
 
       &#right-line
         right: -128px
+        -ms-transform: rotate(130deg)
+        -webkit-transform: rotate(130deg)
         transform: rotate(130deg)
 
     .left-festy-box-line, .right-festy-box-line
@@ -123,6 +132,7 @@ body
         display: block
 
   #sign-up
+    position: absolute
     width: 100%
     max-width: 540px
     margin: 0 auto
@@ -137,7 +147,7 @@ body
       border-left: 2px solid #fff
       position: absolute
       top: 0
-      right: 20px
+      right: 0
       bottom: 0
       line-height: 46px
       width: 100px
@@ -214,7 +224,7 @@ body
       font-size: 80px
 
 
-#slide-4.slide
+#slide-4.slide, #slide-5.slide
   height: 400vh
   .slide-content
     bottom: 400vh

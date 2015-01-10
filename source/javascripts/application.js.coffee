@@ -92,10 +92,10 @@ rainbowTween = new TimelineMax()
 finalTween = new TimelineMax()
   .add([
     
-    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "200vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "400vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "160vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", 1, {'bottom': "360vh", ease: Linear.easeNone})
   ])
   .add([
     TweenMax.to("#mc_embed_signup_scroll", .2, {'transform': "scale(1.1)", ease: Linear.easeNone})
@@ -104,52 +104,52 @@ finalTween = new TimelineMax()
     TweenMax.to("#mc_embed_signup_scroll", .2, {'transform': "scale(1)", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "160vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "360vh", ease: Linear.easeNone})
   ])
   .add([
-    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "160vh", ease: Linear.easeNone})
+    TweenMax.to("#slide-5 > .slide-content", .5, {'bottom': "360vh", ease: Linear.easeNone})
   ])
 
 scrollScene = new ScrollScene({triggerElement: "#bottom-half", duration: 2*duration, offset: -400})
   .setTween(scrollTween)
   .addTo(controller)
-  .addIndicators()
+  # .addIndicators()
 
 apparelScene = new ScrollScene({triggerElement: "#slide-1", duration: 2*duration})
   .setPin("#slide-1", {pushFollowers: false})
   .setClassToggle("#slide-1 > .slide-content", "active")
   .setTween(apparelTween)
   .addTo(controller)
-  .addIndicators()
+  # .addIndicators()
 
 accesoriesScene = new ScrollScene({triggerElement: "#slide-2", duration: 2*duration})
   .setPin("#slide-2", {pushFollowers: false})
   .setClassToggle("#slide-2 > .slide-content", "active")
   .setTween(accesoriesTween)
   .addTo(controller)
-  .addIndicators()
+  # .addIndicators()
 
 artScene = new ScrollScene({triggerElement: "#slide-3", duration: 2*duration})
   .setPin("#slide-3", {pushFollowers: false})
   .setClassToggle("#slide-3 > .slide-content", "active")
   .setTween(artTween)
   .addTo(controller)
-  .addIndicators()
+  # .addIndicators()
 
 rainbowScene = new ScrollScene({triggerElement: "#slide-4", duration: 4*duration})
   .setPin("#slide-4", {pushFollowers: false})
   .setClassToggle("#slide-4 > .slide-content", "active")
   .setTween(rainbowTween)
   .addTo(controller)
-  .addIndicators()
+  # .addIndicators()
 
 
-finalScene = new ScrollScene({triggerElement: "#slide-5", duration: 6*duration})
+finalScene = new ScrollScene({triggerElement: "#slide-5", duration: 4*duration})
   .setPin("#slide-5", {pushFollowers: false})
   .setClassToggle("#slide-5 > .slide-content", "active")
   .setTween(finalTween)
   .addTo(controller)
-  .addIndicators()
+  # .addIndicators()
 
 
 # scene2.on 'leave', (e)->
