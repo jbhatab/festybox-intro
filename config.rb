@@ -2,7 +2,7 @@ set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, 'festybox-intro/images'
 
 set :bower_components, File.join(root, 'bower_components')
 
